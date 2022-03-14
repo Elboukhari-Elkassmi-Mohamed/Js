@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    border: 2px solid rgb(0, 0, 0);
+    max-width: 400px;
+    margin:0 auto;
+    border-radius: 5px;
+    
+}
+
+.cal_input {
+    display: flex;
+    background-color:rgba(218, 220, 221, 0.473);
+    border: none;
+    box-shadow: none;
+    height: 100px;
+    width: 100%;
+    padding: 30px;
+    font-size: 30px;
+    color: rgb(88, 88, 88);
+    
+}
+
+/*to remvoe type number arrows in html */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.cal_buttons{
+ padding: 10px;
+ display: grid;
+ grid-template-columns: repeat(4,1fr);
+ grid-template-rows: repeat(5,1fr);
+ gap: 15px;
+ background-color:rgba(2, 57, 71, 0.473);
+}
+
+
+.clear{
+    grid-column: span 2;
+}
+.equal{
+    grid-column: span 2;
+}
+
+.cal_button{
+
+    padding: 20px;
+    font-size: 30px;
+    background-color: white;
+    border-radius: 44px;
+    cursor: pointer;
+
+
+}
